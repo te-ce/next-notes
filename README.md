@@ -6,3 +6,4 @@ A 'classic' notes app to learn classic web features:
  - Validation (Zod) ✅
  - Styling (Tailwind) ✅
  - State Management (Zustand) ✅
+ - CI Workflows ✅
