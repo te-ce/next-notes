@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 import type { } from "@redux-devtools/extension"; // required for devtools typing
-import { Note } from "../components/Note";
+import { Note } from "../app/components/Note";
 
 interface NoteState {
   notes: Note[];
@@ -10,7 +10,7 @@ interface NoteState {
 }
 
 const notes: Note[] = [
-  { author: "author1", description: "lorem ipsum", id: "1234" },
+  { author: "author1", description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ", id: "1234" },
   { author: "author2", description: "lorem ipsum", id: "752" },
 ];
 

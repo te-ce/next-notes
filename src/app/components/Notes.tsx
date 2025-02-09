@@ -1,6 +1,6 @@
 "use client";
 
-import { useNotesStore } from "../stores/notesStore";
+import { useNotesStore } from "../../stores/notesStore";
 import { Note } from "./Note";
 
 export const Notes = () => {
