@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
-import type { } from "@redux-devtools/extension"; // required for devtools typing
-import { Note } from "../app/components/Note";
+import type { } from "@redux-devtools/extension";
+import { Note } from "@/schemas/note";
 
 interface NoteState {
   notes: Note[];
