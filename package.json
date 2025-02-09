@@ -6,22 +6,33 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "fix": "yarn prettier:fix && yarn eslint:fix",
+    "lint": "yarn tsc:lint && yarn prettier && yarn eslint",
+    "format": "yarn prettier",
+    "prettier": "prettier . --check",
+    "prettier:fix": "prettier . --write --log-level=warn",
+    "eslint": "next lint . --ext .js,.jsx,.ts,.tsx ",
+    "eslint:fix": "next lint . --fix --ext .js,.jsx,.ts,.tsx ",
+    "tsc:lint": "tsc --noemit"
   },
   "dependencies": {
+    "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@redux-devtools/extension": "^3.3.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
-    "@eslint/eslintrc": "^3"
+    "postcss": "^8",
+    "prettier": "^3.5.0",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
