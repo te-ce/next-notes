@@ -4,13 +4,16 @@ import { NoteForm } from "./components/NoteForm";
 import { Notes } from "./components/Notes";
 import db from "../utils/firestore";
 import { collection, getDocs } from "firebase/firestore";
+import { notesSchema } from "@/schemas/note";
 
 export default async function Home() {
   const querySnapshot = await getDocs(collection(db, "notes"));
-  const notes = querySnapshot.docs.map((doc) => ({
-    ...doc.data(),
-    id: doc.id,
-  }));
+  const notes = notesSchema.parse(
+    querySnapshot.docs.map((doc) => ({
+      ...doc.data(),
+      id: doc.id,
+    })),
+  );
 
   console.log("\\\\\\", notes);
   return (

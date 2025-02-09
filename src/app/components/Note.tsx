@@ -1,12 +1,8 @@
 "use client";
+import { Note as NoteProp } from "@/schemas/note";
 import { useNotesStore } from "../../stores/notesStore";
-export interface Note {
-  id: string;
-  description: string;
-  author: string;
-}
 
-export const Note = ({ note }: { note: Note }) => {
+export const Note = ({ note }: { note: NoteProp }) => {
   const deleteNote = useNotesStore((state) => state.delete);
 
   return (
