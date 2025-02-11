@@ -7,3 +7,6 @@ A 'classic' notes app to learn classic web features:
  - Styling (Tailwind) ✅
  - State Management (Zustand) ✅
  - CI Workflows ✅
+
+✅ - implemented
+❌ - todo
