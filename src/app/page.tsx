@@ -1,10 +1,10 @@
-import { Header } from "./components/Header";
-import { NoteForm } from "./components/NoteForm";
-import { Notes } from "./components/Notes";
+import { Header } from "./components/header";
+import { NoteForm } from "./components/noteForm";
+import { Notes } from "./components/notes";
 import db from "../utils/firestore";
 import { collection, getDocs } from "firebase/firestore";
 import { notesSchema } from "@/schemas/note";
-import { Footer } from "./components/Footer";
+import { Footer } from "./components/footer";
 
 export default async function Home() {
   const querySnapshot = await getDocs(collection(db, "notes"));
