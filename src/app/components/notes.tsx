@@ -2,8 +2,8 @@
 
 import { Note as NoteProp } from "@/schemas/note";
 import { useNotesStore } from "../../stores/notesStore";
-import { Note } from "./Note";
 import { useEffect } from "react";
+import { Note } from "./note";
 
 export const Notes = ({ notes }: { notes?: NoteProp[] }) => {
   const notesStore = useNotesStore((state) => state.notes);
