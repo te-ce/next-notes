@@ -1,0 +1,41 @@
+{
+  "name": "next-notes",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "fix": "pnpm prettier:fix && pnpm eslint:fix",
+    "lint": "pnpm tsc:lint && pnpm prettier && pnpm eslint",
+    "format": "pnpm prettier",
+    "prettier": "prettier . --check",
+    "prettier:fix": "prettier . --write --log-level=warn",
+    "eslint": "next lint . --ext .js,.jsx,.ts,.tsx ",
+    "eslint:fix": "next lint . --fix --ext .js,.jsx,.ts,.tsx ",
+    "tsc:lint": "tsc --noemit"
+  },
+  "dependencies": {
+    "@firebase/firestore": "^4.7.7",
+    "firebase": "^11.3.0",
+    "next": "15.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.1",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@redux-devtools/extension": "^3.3.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "postcss": "^8",
+    "prettier": "^3.5.0",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
