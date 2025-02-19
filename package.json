@@ -1,41 +1,44 @@
 {
-  "name": "next-notes",
-  "version": "0.1.0",
-  "private": true,
+  "name": "fullstack-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "fix": "yarn prettier:fix && yarn eslint:fix",
-    "lint": "yarn tsc:lint && yarn prettier && yarn eslint",
-    "format": "yarn prettier",
-    "prettier": "prettier . --check",
-    "prettier:fix": "prettier . --write --log-level=warn",
-    "eslint": "next lint . --ext .js,.jsx,.ts,.tsx ",
-    "eslint:fix": "next lint . --fix --ext .js,.jsx,.ts,.tsx ",
-    "tsc:lint": "tsc --noemit"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepare": "husky",
+    "common": "pnpm --filter common",
+    "notes": "pnpm --filter next-notes",
+    "app": "pnpm --filter web-app"
   },
-  "dependencies": {
-    "@firebase/firestore": "^4.7.7",
-    "firebase": "^11.3.0",
-    "next": "15.1.7",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "zod": "^3.24.1",
-    "zustand": "^5.0.3"
+  "lint-staged": {
+    "**/*.{js,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.4.1",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.1"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@redux-devtools/extension": "^3.3.0",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.6",
-    "postcss": "^8",
-    "prettier": "^3.5.0",
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^15.15.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript-eslint": "^8.24.1"
   }
 }

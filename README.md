@@ -1,17 +1,9 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fullstack Playground
 
-A 'classic' notes app to learn classic web features:
-
-- Database (Firestore) ✅
-- Authentication (NextAuth) ❌
-- Validation (Zod) ✅
-- Styling (Tailwind) ✅
-- State Management (Zustand) ✅
-- CI Workflows ✅
-
-✅ - implemented
-❌ - todo
+This is a [pnpm](https://pnpm.io/) monorepo used as my playground to build and learn fullstack things.
 
 # Resources
 
-- [React Tech Stack](https://www.robinwieruch.de/react-tech-stack/)
+Used and helpful resources:
+
+- [Create a monorepo using PNPM workspace](https://dev.to/vinomanick/create-a-monorepo-using-pnpm-workspace-1ebn)
