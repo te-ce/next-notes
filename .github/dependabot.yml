@@ -1,16 +1,16 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
-    target-branch: "main"
+  - package-ecosystem: 'npm'
+    directory: '/'
+    target-branch: 'main'
     pull-request-branch-name:
-      separator: "-"
+      separator: '-'
     labels:
-      - "dependencies"
+      - 'dependencies'
     commit-message:
-      prefix: "CI"
+      prefix: 'CI'
     schedule:
-      interval: "weekly"
-      time: "08:00"
-      timezone: "Europe/London"
+      interval: 'daily'
+      time: '08:00'
+      timezone: 'Europe/London'
     versioning-strategy: increase
