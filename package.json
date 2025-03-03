@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint .",
+    "lint": "pnpm -r lint",
     "format": "prettier --write .",
     "prepare": "husky",
     "common": "pnpm --filter common",
@@ -14,7 +14,7 @@
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [
-      "eslint --fix"
+      "pnpm -r lint"
     ],
     "**/*": "prettier --write --ignore-unknown"
   },
@@ -27,6 +27,8 @@
     "node": ">=20.11.1"
   },
   "devDependencies": {
+    "@adonisjs/eslint-config": "^2.0.0",
+    "@adonisjs/prettier-config": "github:adonisjs/prettier-config",
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
     "@eslint/js": "^9.21.0",
@@ -38,6 +40,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
     "prettier": "^3.5.1",
+    "prettier-edgejs": "^0.2.35",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "typescript-eslint": "^8.24.1"
   }
