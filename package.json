@@ -10,7 +10,9 @@
     "prepare": "husky",
     "common": "pnpm --filter common",
     "app": "pnpm --filter web-app",
-    "notes:next": "pnpm --filter notes-next"
+    "urlshorter:hono": "pnpm --filter url-shorter-hono",
+    "notes:next": "pnpm --filter notes-next",
+    "notes:adonis": "pnpm --filter notes-adonis"
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [

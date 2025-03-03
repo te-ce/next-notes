@@ -1,0 +1,18 @@
+{
+  "name": "url-shorter-hono",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "hono": "^4.7.2"
+  },
+  "devDependencies": {
+    "@hono/eslint-config": "^1.0.2",
+    "@types/node": "^20.11.17",
+    "eslint-config-prettier": "^10.0.1",
+    "tsx": "^4.7.1"
+  }
+}
