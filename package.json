@@ -9,8 +9,8 @@
     "format": "prettier --write .",
     "prepare": "husky",
     "common": "pnpm --filter common",
-    "notes": "pnpm --filter next-notes",
-    "app": "pnpm --filter web-app"
+    "app": "pnpm --filter web-app",
+    "notes:next": "pnpm --filter notes-next"
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [
