@@ -9,10 +9,10 @@
     "format": "prettier --write .",
     "prepare": "husky",
     "common": "pnpm --filter common",
-    "app": "pnpm --filter web-app",
-    "urlshorter:hono": "pnpm --filter url-shorter-hono",
-    "notes:next": "pnpm --filter notes-next",
-    "notes:adonis": "pnpm --filter notes-adonis"
+    "fe:react": "pnpm --filter react-frontend",
+    "be:adonis": "pnpm --filter adonis-backend",
+    "be:hono": "pnpm --filter hono-backend",
+    "fe:next": "pnpm --filter next-frontend"
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [
