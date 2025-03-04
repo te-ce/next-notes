@@ -11,7 +11,7 @@
   "devDependencies": {
     "typescript": "~5.8.2",
     "vite": "^6.1.0",
-    "vite-plugin-dts": "^4.5.0"
+    "vite-plugin-dts": "^4.5.3"
   },
   "main": "./dist/common.js",
   "types": "./dist/main.d.ts"
