@@ -9,10 +9,16 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.13.8",
+    "@hono/zod-validator": "^0.4.3",
     "@libsql/client": "^0.14.0",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0",
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.40.0",
-    "hono": "^4.7.2"
+    "eslint-plugin-drizzle": "^0.2.3",
+    "hono": "^4.7.2",
+    "pino": "^9.6.0",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@faker-js/faker": "^9.5.1",

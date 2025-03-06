@@ -1,7 +1,7 @@
 import "dotenv/config";
 import { eq } from "drizzle-orm";
 import { db } from "../index.js";
-import { notesTable } from "../schemas/schema.js";
+import { notesTable } from "../schemas/notes.js";
 
 export async function example() {
   const note: typeof notesTable.$inferInsert = {

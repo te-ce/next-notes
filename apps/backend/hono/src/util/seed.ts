@@ -1,7 +1,7 @@
 import { faker } from "@faker-js/faker";
 import { createClient } from "@libsql/client";
 import { drizzle } from "drizzle-orm/libsql";
-import { notesTable } from "../schemas/schema.js";
+import { notesTable } from "../schemas/notes.js";
 import { getRandomNumber } from "./general.js";
 
 const client = createClient({ url: "file:local.db" });
