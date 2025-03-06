@@ -3,16 +3,23 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
+    "seed": "tsx src/util/seed.ts",
+    "db:push": "npx drizzle-kit push",
     "lint": "eslint ."
   },
   "dependencies": {
     "@hono/node-server": "^1.13.8",
+    "@libsql/client": "^0.14.0",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.40.0",
     "hono": "^4.7.2"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.5.1",
     "@hono/eslint-config": "^1.0.2",
     "@types/node": "^20.11.17",
+    "drizzle-kit": "^0.30.5",
     "eslint-config-prettier": "^10.0.1",
-    "tsx": "^4.7.1"
+    "tsx": "^4.19.3"
   }
 }
